@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djangosandbox.conf.urls.main'
+ROOT_URLCONF = 'djangoskeleton.conf.urls.main'
 
 TEMPLATES = [
     {
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangosandbox.conf.wsgi.app.application'
+WSGI_APPLICATION = 'djangoskeleton.conf.wsgi.app.application'
 
 
 # Database
@@ -66,9 +66,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'HOST': 'localhost',
-        'NAME': 'djangosandbox',
-        'USER': 'djangosandbox',
-        'PASSWORD': 'djangosandbox',
+        'NAME': 'djangouser',
+        'USER': 'djangouser',
+        'PASSWORD': 'djangouser',
     }
 }
 
