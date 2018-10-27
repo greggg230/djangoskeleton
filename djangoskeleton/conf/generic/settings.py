@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djangoskeleton.apps.core'
+    'djangoskeleton.apps.core',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
@@ -111,3 +112,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+NOTEBOOK_ARGUMENTS = [
+    '--ip', '0.0.0.0',
+    '--port', '8320',
+    "--NotebookApp.token=''",
+    "--NotebookApp.password=''"
+]
