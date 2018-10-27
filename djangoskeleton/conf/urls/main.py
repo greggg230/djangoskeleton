@@ -1,13 +1,10 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 
 admin.autodiscover()
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^',
-        include(
-            'djangoskeleton.apps.core.urls',
-            namespace='core')),
+    path('admin/', admin.site.urls),
+    path('', include('djangoskeleton.apps.core.urls', namespace='core')),
 ]
